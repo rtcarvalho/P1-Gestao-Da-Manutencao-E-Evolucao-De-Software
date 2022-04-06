@@ -1,27 +1,27 @@
-class Player:
+class Jogador:
 
-    def __init__(self, name, points, score):
-        self._name = name
-        self._points = points
+    def __init__(self, nome, pontos, score):
+        self._nome = nome
+        self._pontos = pontos
         self._score = score
 
-    def setPlayerName (self,name):
-        self._name = name
+    def setNomeJogador (self,nome):
+        self._nome = nome
 
-    def setPlayerScore(self):
+    def setScoreJogador(self):
         self._score += 1
 
-    def getPlayerScore(self):
+    def getScoreJogador(self):
         return self._score
     
-    def setPlayerPoints (self,points):
-        self._points = points
+    def setPontosJogador (self,pontos):
+        self._points = pontos
     
-    def getPlayerName (self):
-        return self._name
+    def getNomeJogador (self):
+        return self._nome
 
-    def getPlayerPoints (self):
-        return self._points
+    def getPontosJogador (self):
+        return self._pontos
 
-    def getPlayerSets(self):
-        return round(self._points/15) if round(self._points/15)>0 else 0   
+    def getSetsJogador(self):
+        return round(self._pontos/15) if round(self._pontos/15)>0 else 0   
